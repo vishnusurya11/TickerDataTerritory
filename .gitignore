@@ -8,6 +8,7 @@
 #/path/to/directory/
 tutorial-env/
 financial_data/
+test_data/
 
 # Ignore a specific file in a specific directory
 #/path/to/directory/my_file.txt

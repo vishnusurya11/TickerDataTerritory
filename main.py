@@ -39,9 +39,19 @@ def get_ticker_data(ticker):
 # Main execution
 if __name__ == "__main__":
     start_time = time.time()
-    yaml_file_path = 'tickers_exp.yaml'
+    
+    # uncomment dev while testing
+    # ENV = "PROD"
+    ENV = "DEV"
+    
+    if ENV == "PROD":
+        yaml_file_path = 'tickers.yaml'
+        data_directory = 'financial_data'
+    else:
+        yaml_file_path = 'tickers_exp.yaml'
+        data_directory = 'test_data'
+
     tickers = read_tickers_from_yaml(yaml_file_path)
-    data_directory = 'financial_data'
 
     for ticker in tickers:
         ticker_data = get_ticker_data(ticker)
