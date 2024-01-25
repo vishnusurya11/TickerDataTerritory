@@ -1,0 +1,14 @@
+# Ignore all .log files
+*.log
+
+# Ignore specific file
+#my_secret_file.txt
+
+# Ignore all files in a specific directory
+#/path/to/directory/
+tutorial-env/
+financial_data/
+
+# Ignore a specific file in a specific directory
+#/path/to/directory/my_file.txt
+
